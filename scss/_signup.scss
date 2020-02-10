@@ -1,0 +1,32 @@
+.signup-section {
+  padding: 10rem 0;
+  background: url('https://www.homebrewingblog.com/wp-content/uploads/2013/04/Lazy-Home-Brewing.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  .form-inline {
+    input {
+      border-radius: 40px;
+      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0,0,0,.1) !important;
+      padding: 1.25rem 2rem;
+      height: auto;
+      font-family: 'Varela Round';
+      font-size: 80%;
+      text-transform: inherit;
+      letter-spacing: 0.15rem;
+      border: 0;
+    }
+    button {
+      background-color: #075E54;
+      border-radius: 100%;
+      color: #FFF;
+      font-size: 30px;
+      letter-spacing: 0;
+      line-height: 0;
+      padding: 15px;
+      width: 59px;
+      height: 59px;
+    }
+  }
+}
