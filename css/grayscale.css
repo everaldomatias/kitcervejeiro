@@ -91,7 +91,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("https://static.wixstatic.com/media/78b131d5940c4fa4af3c52691d889ee2.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/everaldo-matias-kit-cervejeito-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -170,6 +170,18 @@
   margin-bottom: 5rem;
 }
 
+#gallery {
+  clear: both;
+  display: block;
+}
+
+#gallery .container img {
+  border: 5px solid #fff;
+  border-radius: 10px;
+  float: left;
+  width: 25%;
+}
+
 .projects-section {
   padding: 10rem 0;
 }
@@ -203,7 +215,9 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: url("https://www.homebrewingblog.com/wp-content/uploads/2013/04/Lazy-Home-Brewing.jpg");
+  background: url("../img/everaldo-matias-kit-cervejeito-header.jpg");
+  background-color: #c53200;
+  background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -291,6 +305,10 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   color: #5f1800;
+}
+
+img {
+  max-width: 100%;
 }
 
 .bg-black {
