@@ -52,4 +52,8 @@ document.addEventListener("DOMContentLoaded", function(){
     sendWhatsAppMessage.setAttribute("href", 'https://api.whatsapp.com/send?phone=5511947910004&text=%20' + message);
   });
 
+  $(function () {
+    $('.lazy').Lazy();
+  });
+
 });

@@ -134,6 +134,13 @@
   }
 }
 
+@media (max-width: 630px) {
+  .masthead {
+    min-height: 30rem;
+    padding: 10rem 0 5rem;
+  }
+}
+
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -170,16 +177,64 @@
   margin-bottom: 5rem;
 }
 
-#gallery {
-  clear: both;
-  display: block;
+@media (max-width: 630px) {
+  .about-section {
+    padding-top: 3rem;
+  }
 }
 
-#gallery .container img {
+#gallery {
+  color: #343a40;
+  clear: both;
+  display: block;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+#gallery h2 {
+  color: #343a40;
+  text-align: center;
+}
+
+#gallery .container .the-gallery {
+  overflow: hidden;
+}
+
+#gallery .container .the-gallery:hover img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.9;
+}
+
+#gallery .container .the-gallery img {
   border: 5px solid #fff;
   border-radius: 10px;
   float: left;
+  transition: opacity 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
   width: 25%;
+}
+
+@media (max-width: 630px) {
+  #gallery .container .the-gallery img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    width: 50%;
+  }
+}
+
+@media (max-width: 420px) {
+  #gallery .container .the-gallery img {
+    width: 100%;
+  }
+}
+
+#gallery .container .the-gallery img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .projects-section {
@@ -213,11 +268,90 @@
   }
 }
 
+.text-center.delivery {
+  text-align: center;
+}
+
+@media (max-width: 630px) {
+  #projects {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+}
+
+#items {
+  padding-bottom: 3rem;
+}
+
+#items h2 {
+  text-align: center;
+}
+
+#items ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#items ul li {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+
+#items ul li:nth-child(odd) {
+  background-color: #fff;
+}
+
+#items ul li .qty {
+  font-size: 0.7em;
+}
+
+#items ul li:last-child .qty {
+  color: transparent;
+}
+
+@media (max-width: 630px) {
+  #items ul li:last-child .qty {
+    display: none;
+  }
+}
+
+#items ul li .price {
+  float: right;
+  text-decoration: line-through;
+}
+
+@media (max-width: 630px) {
+  #items ul li .price {
+    display: block;
+    float: none;
+    margin-top: 10px;
+    text-align: left;
+  }
+}
+
+#items ul li .price .mini {
+  font-size: 0.7em;
+}
+
+#items ul li:last-child .price {
+  text-decoration: none;
+}
+
+#sale-price {
+  background-color: #c53200;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px 30px 15px;
+  text-align: center;
+}
+
 .signup-section {
   padding: 10rem 0;
   background: url("../img/everaldo-matias-kit-cervejeito-header.jpg");
-  background-color: #c53200;
-  background-blend-mode: overlay;
+  background-color: #343a40;
+  background-blend-mode: multiply;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -246,6 +380,25 @@
   padding: 15px;
   width: 59px;
   height: 59px;
+}
+
+@media (max-width: 580px) {
+  .signup-section .form-inline input {
+    float: left;
+    max-width: 80%;
+  }
+  .signup-section .form-inline #sendWhatsAppMessage {
+    display: inline;
+    float: right;
+    margin-left: 5px;
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .signup-section .form-inline input {
+    max-width: 70%;
+  }
 }
 
 .contact-section {
